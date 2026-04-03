@@ -1,16 +1,68 @@
-# React + Vite
+# 💰 Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive finance dashboard built using React and Tailwind CSS.  
+It helps users track income, expenses, and overall financial trends.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Dashboard Overview
+- Income, Expenses, and Balance summary cards
+- Balance trend (Line Chart)
+- Spending breakdown (Pie Chart)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Transactions
+- View list of transactions
+- Includes:
+  - Date
+  - Amount
+  - Category
+  - Type (Income / Expense)
 
-## Expanding the ESLint configuration
+### Search & Filter
+- Search transactions by category
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Role-Based UI
+- **Viewer**
+  - Can only view data
+- **Admin**
+  - Can add transactions (UI-based)
+
+### Insights
+- Highest spending category
+- Income vs Expenses comparison
+- Balance trend observation
+
+---
+
+## UI/UX Features
+
+- Clean and modern design
+- Responsive layout (mobile + desktop)
+- Hover effects for better interaction
+- Proper spacing and readability
+- Empty state handling
+
+---
+
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- Recharts (for charts)
+
+---
+
+## Project Structure
+
+src/
+│
+├── components/
+│ ├── Navbar.jsx
+│ ├── SummaryCards.jsx
+│ ├── Transactions.jsx
+│ ├── Charts.jsx
+│
+├── App.jsx
+└── main.jsx
